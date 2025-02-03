@@ -1,0 +1,289 @@
+//header
+#header {
+	position: sticky;
+	top: 0;
+	width: 100%;
+	z-index: 100;
+
+	.header-bg-img {
+		height: 110px;
+		position: relative;
+
+		>img {
+			object-fit: fill;
+
+			@media (max-width: $devise_tb_max_width) {
+				object-fit: cover;
+			}
+		}
+	}
+
+	.header-detail-box {
+		bottom: 0;
+		left: 0;
+		margin: 0 auto;
+		position: absolute;
+		right: 0;
+		top: 12%;
+		width: 94%;
+
+		@media (max-width: $devise_tb_max_width) {
+			top: 10%;
+		}
+
+		.header-logo {
+			float: left;
+			width: 270px;
+
+			@media (max-width: $devise_tb_max_width) {
+				float: inherit;
+				margin: 0 auto;
+				width: 220px;
+			}
+		}
+
+		.header-detail-area {
+			align-items: center;
+			box-sizing: border-box;
+			display: flex;
+			justify-content: space-between;
+			margin: 0 auto;
+			margin-right: 0;
+			max-width: 1000px;
+			padding-top: 5px;
+			width: 100%;
+
+			.select-area {
+				width: 16%;
+
+				@media (max-width: $devise_tb_max_width) {
+					width: 14%;
+				}
+
+				>a {
+					font-size: 17px;
+					letter-spacing: 0.1em;
+					line-height: 29px;
+
+					@media (max-width: $devise_tb_max_width) {
+						font-size: 14px;
+						line-height: 26px;
+					}
+				}
+
+				&.large {
+					width: 24%;
+
+					@media (max-width: $devise_tb_max_width) {
+						width: 26%;
+					}
+				}
+			}
+
+			.sns-icon {
+				width: 3%;
+			}
+		}
+	}
+
+}
+
+//footer
+#footer {
+	position: relative;
+
+	.form-bg-img {
+		bottom: 90%;
+		position: absolute;
+
+		@media (max-width: $devise_tb_max_width) {
+			bottom: 100%;
+		}
+	}
+
+	.form-main-area {
+		box-sizing: border-box;
+		display: flex;
+		margin: 0 auto;
+		padding-top: 30px;
+		position: relative;
+		width: 94%;
+
+		@media (max-width: $devise_tb_max_width) {
+			box-sizing: border-box;
+			margin-top: -100px;
+			padding: 0 20px;
+			width: 100%;
+		}
+
+		.form-area {
+			box-sizing: border-box;
+			display: flex;
+			justify-content: center;
+			padding-top: 50px;
+			width: 100%;
+
+			@media (max-width: $devise_tb_max_width) {
+				flex-wrap: wrap;
+				justify-content: left;
+			}
+
+			.form-list {
+				list-style: none;
+				margin-right: 5%;
+				width: 25%;
+
+				&:nth-of-type(1) {
+					margin-right: 10%;
+					width: 30%;
+
+					@media (max-width: $devise_tb_max_width) {
+						margin-right: 0;
+						width: 100%;
+					}
+				}
+
+				@media (max-width: $devise_tb_max_width) {
+					margin-right: 5%;
+					width: 47%;
+
+					&:nth-of-type(3n) {
+						margin-right: 0;
+					}
+				}
+
+				.footer-title-area {
+					border-bottom: 1px solid #333333;
+					box-sizing: border-box;
+					font-size: 15px;
+					font-weight: bold;
+					letter-spacing: 0.1em;
+					padding-top: 30px;
+
+					@media (max-width: $devise_tb_max_width) {
+						line-height: 24px;
+						padding-top: 15px;
+					}
+				}
+
+				.footer-list-area {
+					margin-top: 15px;
+
+					@media (max-width: $devise_tb_max_width) {
+						margin-top: 10px;
+					}
+
+					>li {
+						cursor: pointer;
+						font-size: 15px;
+						line-height: 24px;
+						margin-bottom: 5px;
+						margin-left: 10px;
+
+						@media (max-width: $devise_tb_max_width) {
+							font-size: 14px;
+							margin-left: 0;
+						}
+
+						>a {
+							text-align: left;
+							transition: 0.5s;
+
+							&:hover {
+								opacity: 0.7;
+							}
+
+							>img {
+								height: 29px;
+								margin-right: 10px;
+								width: 29px;
+
+								@media (max-width: $devise_tb_max_width) {
+									height: 27px;
+									width: 27px;
+								}
+							}
+						}
+					}
+
+					&.sns-icon {
+						display: flex;
+						flex-wrap: wrap;
+
+						@media (max-width: $devise_tb_max_width) {
+							margin-top: 20px;
+						}
+
+						@media (max-width: $devise_sp_max_width) {
+							margin-bottom: 20px;
+							margin-top: 0;
+						}
+
+						>li {
+							margin-left: 0;
+						}
+					}
+				}
+
+				.office-logo {
+					box-sizing: border-box;
+					padding-bottom: 20px;
+					padding-top: 15px;
+
+					@media (max-width: $devise_tb_max_width) {
+						padding: 0;
+					}
+
+					>img {
+						@media (max-width: $devise_tb_max_width) {
+							width: 35%;
+						}
+
+						@media (max-width: $devise_sp_max_width) {
+							margin-bottom: 5px;
+							width: 80%;
+						}
+					}
+				}
+
+				.office-address {
+					@media (max-width: $devise_tb_max_width) {
+						line-height: 22px;
+						padding-bottom: 20px;
+					}
+				}
+			}
+		}
+	}
+
+	.footer-txt {
+		color: #333333;
+		font-size: 11px;
+		letter-spacing: 0.25em;
+		text-align: center;
+		padding-top: 25px;
+
+		@media (max-width: $devise_tb_max_width) {
+			box-sizing: border-box;
+			font-size: 10px;
+			margin-top: 30px;
+			padding: 10px 0 20px;
+		}
+
+		p {
+			margin-bottom: 0;
+		}
+	}
+
+	&.pc-footer {
+		@media (max-width: $devise_tb_max_width) {
+			display: none;
+		}
+	}
+
+	&.sp-footer {
+		@media (max-width: $devise_tb_max_width) {
+			display: none;
+		}
+	}
+}

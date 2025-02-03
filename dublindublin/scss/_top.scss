@@ -1,0 +1,774 @@
+#page-top {
+
+	// トップ タイトル部分
+	section.top-main-area {
+		position: relative;
+
+		.top-title-bg {
+			margin: 0 auto;
+			width: 94%;
+		}
+
+		.dublin-main-title {
+			bottom: 35%;
+			position: absolute;
+			right: 13%;
+			text-align: center;
+
+			@media (max-width: $devise_tb_max_width) {
+				bottom: 34%;
+				right: 9%;
+			}
+
+			@media (max-width: $devise_sp_max_width) {
+				bottom: 0;
+				left: 0;
+				right: 0;
+				top: 5%;
+			}
+
+			.site-main-title {
+				font-size: 65px;
+				letter-spacing: 0.2em;
+				line-height: 72px;
+
+				@media (max-width: $devise_tb_max_width) {
+					font-size: 40px;
+					line-height: 52px;
+				}
+
+				.main-title-fs {
+					font-size: 32px;
+					letter-spacing: 0.2em;
+					line-height: 42px;
+
+					@media (max-width: $devise_tb_max_width) {
+						font-size: 24px;
+						line-height: 32px;
+					}
+
+					@media (max-width: $devise_tb_max_width) {
+						font-size: 20px;
+					}
+				}
+			}
+		}
+	}
+
+	// ダブリンダブリンのこだわり
+	section.about-main-area {
+		box-sizing: border-box;
+		padding-top: 200px;
+		position: relative;
+
+		@media (max-width: $devise_tb_max_width) {
+			padding-top: 150px;
+		}
+
+		@media (max-width: $devise_sp_max_width) {
+			padding-top: 120px;
+		}
+
+		.about-detail-area {
+			margin: 0 auto;
+			max-width: 1200px;
+			position: relative;
+			text-align: right;
+			width: 100%;
+
+			@media (max-width: $devise_tb_max_width) {
+				max-width: 100%;
+			}
+
+			.about-flag-img {
+				height: auto;
+				left: 0;
+				position: absolute;
+				top: -23%;
+				width: 422px;
+
+				@media (max-width: $devise_tb_max_width) {
+					top: -10%;
+					width: 280px;
+				}
+
+				@media (max-width: $devise_sp_max_width) {
+					top: -25%;
+					width: 190px;
+				}
+			}
+		}
+
+		.about-img {
+			max-width: 1200px;
+			position: relative;
+			top: -250px;
+
+			@media (max-width: $devise_tb_max_width) {
+				max-width: 100%;
+				top: -80px;
+				width: 100%;
+			}
+
+			@media (max-width: $devise_sp_max_width) {
+				top: -10px;
+			}
+
+			&::before {
+				background-image: url(/assets/img/top/about-book.png);
+				background-position-x: left;
+				background-repeat: no-repeat;
+				background-size: cover;
+				bottom: -25%;
+				content: '';
+				display: block;
+				height: 230px;
+				position: absolute;
+				right: -8%;
+				width: 390px;
+
+				@media (max-width: $devise_tb_max_width) {
+					bottom: -65%;
+					right: 0;
+				}
+
+				@media (max-width: $devise_sp_max_width) {
+					bottom: -90%;
+					height: 150px;
+					right: 0;
+					width: 240px;
+				}
+			}
+
+			>img {
+				width: 75%;
+
+				@media (max-width: $devise_tb_max_width) {
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	// 留学までの流れ
+	section.flow-main-area {
+		position: relative;
+
+		@media (max-width: $devise_sp_max_width) {
+			padding-top: 30px;
+		}
+
+		&::after {
+			background-image: url(/assets/img/top/sheep02.png);
+			background-position-x: left;
+			background-repeat: no-repeat;
+			background-size: cover;
+			bottom: -19%;
+			content: '';
+			display: block;
+			height: 220px;
+			left: 10%;
+			position: absolute;
+			width: 450px;
+			z-index: 5;
+
+			@media (max-width: $devise_tb_max_width) {
+				display: none;
+			}
+		}
+
+		.flow-detail-area {
+			margin: 0 auto;
+			max-width: 1200px;
+			position: relative;
+			text-align: left;
+			width: 100%;
+
+			@media (max-width: $devise_tb_max_width) {
+				box-sizing: border-box;
+				max-width: 100%;
+				padding: 0 20px;
+			}
+
+			@media (max-width: $devise_sp_max_width) {
+				padding: 0;
+			}
+
+			&::before {
+				background-image: url(/assets/img/top/sheep01.png);
+				background-position-x: left;
+				background-repeat: no-repeat;
+				background-size: cover;
+				content: '';
+				display: block;
+				height: 320px;
+				position: absolute;
+				right: 0;
+				width: 620px;
+
+				@media (max-width: $devise_tb_max_width) {
+					display: none;
+				}
+			}
+		}
+
+		.flow-list-box {
+			margin: 0 auto;
+			max-width: 1200px;
+			position: relative;
+
+			@media (max-width: $devise_tb_max_width) {
+				box-sizing: border-box;
+				max-width: 100%;
+				padding: 0 20px;
+			}
+
+			.flow-list-area {
+				display: flex;
+				position: relative;
+				width: 100%;
+
+				@media (max-width: $devise_tb_max_width) {
+					display: block;
+				}
+
+				.flow-list {
+					box-sizing: border-box;
+					margin-right: 4%;
+					text-align: center;
+					width: 32%;
+
+					@media (max-width: $devise_tb_max_width) {
+						align-items: center;
+						display: flex;
+						justify-content: center;
+						margin-right: 0;
+						text-align: right;
+						width: 100%;
+					}
+
+					>h3 {
+						font-size: 21px;
+						margin-bottom: 10px;
+
+						@media (max-width: $devise_tb_max_width) {
+							font-size: 18px;
+						}
+					}
+
+					&:nth-of-type(2) {
+						left: 0;
+						margin: 0 auto;
+						padding-top: 7%;
+						position: absolute;
+						right: 0;
+
+						@media (max-width: $devise_tb_max_width) {
+							flex-direction: row-reverse;
+							padding-top: 0;
+							position: inherit;
+							text-align: left;
+						}
+
+						&::before {
+							background-image: url(/assets/img/top/about-line01.png);
+							background-position-x: left;
+							background-repeat: no-repeat;
+							background-size: cover;
+							content: '';
+							display: block;
+							height: 90px;
+							left: -35%;
+							position: absolute;
+							top: 23%;
+							width: 250px;
+							z-index: -1;
+
+							@media (max-width: $devise_tb_max_width) {
+								left: 37%;
+								top: -25%;
+								width: 280px;
+							}
+
+							@media (max-width: $devise_sp_max_width) {
+								width: 150px;
+							}
+						}
+					}
+
+					&:nth-of-type(3) {
+						left: 0;
+						margin: 0 auto;
+						margin-right: 0;
+						padding-top: 20%;
+						right: 0;
+						position: absolute;
+
+						@media (max-width: $devise_tb_max_width) {
+							padding-top: 0;
+							position: inherit;
+						}
+
+						&::before {
+							background-image: url(/assets/img/top/about-line02.png);
+							background-position-x: left;
+							background-repeat: no-repeat;
+							background-size: cover;
+							bottom: 20%;
+							content: '';
+							display: block;
+							height: 110px;
+							left: -40%;
+							position: absolute;
+							width: 210px;
+							z-index: -1;
+
+							@media (max-width: $devise_tb_max_width) {
+								height: 100px;
+								left: 33%;
+								transform: rotate(-60deg);
+								top: -40%;
+								width: 180px;
+							}
+
+							@media (max-width: $devise_sp_max_width) {
+								height: 70px;
+								width: 140px;
+							}
+						}
+					}
+
+					.flow-list-img {
+						height: auto;
+						width: 94%;
+
+						@media (max-width: $devise_tb_max_width) {
+							width: 50%;
+						}
+					}
+
+					.flow-list-text {
+						margin-top: 10px;
+
+						@media (max-width: $devise_tb_max_width) {
+							width: 50%;
+						}
+
+						>h3 {
+							@media (max-width: $devise_tb_max_width) {
+								margin-bottom: 20px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// 学校紹介
+	section.school-main-area {
+		background-color: #F6F4E4;
+		clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%);
+		position: relative;
+		z-index: auto;
+
+		@media (max-width: $devise_tb_max_width) {
+			clip-path: polygon(0 0, 100% 6%, 100% 90%, 0 100%);
+			top: -102px;
+			z-index: -1;
+		}
+
+		@media (max-width: $devise_sp_max_width) {
+			top: -40px;
+		}
+
+		&::before {
+			background-image: url(/assets/img/top/top-school01.png);
+			background-position-x: left;
+			background-repeat: no-repeat;
+			background-size: cover;
+			content: '';
+			display: block;
+			height: 120px;
+			left: 44%;
+			position: absolute;
+			top: 9.5%;
+			width: 110px;
+			z-index: 5;
+
+			@media (max-width: $devise_tb_max_width) {
+				display: none;
+			}
+		}
+
+		&::after {
+			display: none;
+
+			@media (max-width: $devise_tb_max_width) {
+				background-image: url(/assets/img/top/sheep02.png);
+				background-position-x: left;
+				background-repeat: no-repeat;
+				background-size: cover;
+				content: '';
+				display: block;
+				height: 180px;
+				left: 8%;
+				position: absolute;
+				top: 5%;
+				width: 365px;
+				z-index: 5;
+
+				@media (max-width: $devise_sp_max_width) {
+					height: 110px;
+					top: 5%;
+					width: 220px;
+				}
+			}
+		}
+
+		.school-detail-area {
+			align-items: baseline;
+			box-sizing: border-box;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			margin: 0 auto;
+			max-width: 1200px;
+			padding-top: 200px;
+			position: relative;
+			width: 100%;
+
+			@media (max-width: $devise_tb_max_width) {
+				align-items: center;
+				box-sizing: border-box;
+				max-width: 100%;
+				padding: 120px 20px 0 20px;
+			}
+
+			.section-detail-area {
+				box-sizing: border-box;
+				margin-right: 6%;
+				padding-bottom: 50px;
+				width: 47%;
+
+				@media (max-width: $devise_tb_max_width) {
+					margin-right: 0;
+					padding: 0;
+					width: 58%;
+
+					&.tb-sp-visibility {
+
+						&:nth-of-type(3) {
+							width: 35%;
+						}
+
+						&:nth-of-type(4) {
+							width: 23%;
+						}
+
+						&:nth-of-type(9) {
+							width: 23%;
+						}
+					}
+
+					&:nth-of-type(5),
+					&:nth-of-type(8) {
+						width: 70%;
+					}
+				}
+
+				&:nth-of-type(even) {
+					margin-right: 0;
+				}
+
+				&.school-img {
+					padding-bottom: 0;
+					position: absolute;
+					right: 0;
+					top: 15%;
+
+					@media (max-width: $devise_tb_max_width) {
+						position: inherit;
+					}
+				}
+
+				&.student-img {
+					bottom: 32%;
+					padding-bottom: 0;
+					position: absolute;
+					right: 0;
+
+					@media (max-width: $devise_tb_max_width) {
+						bottom: 30%;
+						right: 2%;
+					}
+				}
+
+				&.sp-layout {
+					@media (max-width: $devise_tb_max_width) {
+						margin-bottom: 50px;
+						padding-top: 40px;
+						text-align: right;
+						width: 100%;
+
+						@media (max-width: $devise_sp_max_width) {
+							padding-top: 0;
+						}
+
+						.section-main-title {
+							margin: 0 auto;
+							margin-right: 0;
+							width: 40%;
+						}
+					}
+				}
+			}
+		}
+
+		.other-school-select-area {
+			box-sizing: border-box;
+			margin: 0 auto;
+			max-width: 1200px;
+			padding-bottom: 200px;
+
+			@media (max-width: $devise_tb_max_width) {
+				max-width: 100%;
+				padding: 0 20px 230px 20px;
+			}
+
+			>h3 {
+				margin-bottom: 10px;
+			}
+
+			.other-school-box {
+				align-items: center;
+				display: flex;
+				flex-wrap: wrap;
+				width: 100%;
+
+				.other-school-list {
+					background-color: #E6A978;
+					border-radius: 15px;
+					color: #ffffff;
+					margin-bottom: 20px;
+					margin-right: 1.5%;
+					width: 18.8%;
+
+					&:nth-of-type(5n) {
+						margin-right: 0;
+					}
+
+					@media (max-width: $devise_sp_max_width) {
+						margin-bottom: 15px;
+						margin-right: 2%;
+						width: 32%;
+
+						&:nth-of-type(3n) {
+							margin-right: 0;
+						}
+
+						&:nth-of-type(4n),
+						&:nth-of-type(5n) {
+							margin-right: 2%;
+						}
+					}
+
+					>a {
+						box-sizing: border-box;
+						padding: 10px 0;
+
+						&:hover {
+							opacity: unset;
+							transition: none;
+						}
+					}
+
+					&:hover {
+						opacity: 0.6;
+						transition: 0.5s;
+					}
+				}
+			}
+		}
+	}
+
+	// ブログ・質問エリア
+	section.content-main-area {
+		background-color: #E6A978;
+		box-sizing: border-box;
+		padding-bottom: 300px;
+		position: relative;
+		z-index: auto;
+
+		@media (max-width: $devise_tb_max_width) {
+			padding-bottom: 200px;
+			top: -110px;
+		}
+
+		@media (max-width: $devise_sp_max_width) {
+			padding-bottom: 120px;
+		}
+
+		&:before {
+			content: '';
+			position: absolute;
+			top: -20%;
+			bottom: 0;
+			height: 300px;
+			left: 0;
+			right: 0;
+			background-color: #E6A978;
+			transform: skewY(-7deg);
+			z-index: -1;
+
+			@media (max-width: $devise_tb_max_width) {
+				top: -25%;
+			}
+
+			@media (max-width: $devise_sp_max_width) {
+				height: 150px;
+				top: -8%;
+				transform: skewY(-10deg);
+			}
+		}
+
+		.certificate-img {
+			height: 145px;
+			left: 10%;
+			position: absolute;
+			top: -16%;
+			width: 220px;
+			z-index: 5;
+
+			@media (max-width: $devise_tb_max_width) {
+				height: 130px;
+				left: 2%;
+				top: -29%;
+				width: 200px;
+			}
+
+			@media (max-width: $devise_sp_max_width) {
+				height: 100px;
+				top: -12.5%;
+				width: 150px;
+			}
+		}
+
+		&::after {
+			background-image: url(/assets/img/top/kamome.png);
+			background-position-x: left;
+			background-repeat: no-repeat;
+			background-size: cover;
+			content: '';
+			display: block;
+			height: 150px;
+			position: absolute;
+			right: 10%;
+			top: -15%;
+			width: 290px;
+			z-index: 5;
+
+			@media (max-width: $devise_tb_max_width) {
+				height: 135px;
+				right: 2%;
+				top: -19%;
+				width: 250px;
+			}
+
+			@media (max-width: $devise_sp_max_width) {
+				height: 95px;
+				top: -8%;
+				width: 180px;
+			}
+		}
+
+		.content-box {
+			align-items: center;
+			display: flex;
+			margin: 0 auto;
+			max-width: 1200px;
+			width: 100%;
+
+			@media (max-width: $devise_tb_max_width) {
+				box-sizing: border-box;
+				max-width: 100%;
+				padding: 0 20px;
+			}
+
+			@media (max-width: $devise_sp_max_width) {
+				display: block;
+			}
+
+			.content-list {
+				margin-right: 10%;
+				position: relative;
+				width: 50%;
+
+				@media (max-width: $devise_tb_max_width) {
+					margin-right: 5%;
+				}
+
+				@media (max-width: $devise_sp_max_width) {
+					width: 100%;
+					margin-bottom: 60px;
+					margin-right: 0;
+				}
+
+				&:last-child {
+					margin-right: 0;
+				}
+
+				.guiness-img {
+					bottom: 36%;
+					position: absolute;
+					right: 0;
+					width: 15%;
+
+					@media (max-width: $devise_tb_max_width) {
+						bottom: 51%;
+						width: 18%;
+					}
+
+					@media (max-width: $devise_sp_max_width) {
+						bottom: 41%;
+						width: 16%;
+					}
+				}
+
+				.flag-img {
+					bottom: -15%;
+					left: 0;
+					position: absolute;
+					width: 25%;
+
+					@media (max-width: $devise_sp_max_width) {
+						bottom: -18%;
+					}
+				}
+
+				.clover-img {
+					bottom: -15%;
+					position: absolute;
+					right: 0;
+					width: 20%;
+
+					@media (max-width: $devise_tb_max_width) {
+						bottom: -17%;
+					}
+				}
+			}
+
+			.section-content-area {
+				margin: 20px 0 0 30px;
+
+				@media (max-width: $devise_sp_max_width) {
+					margin: 20px 0 0 0;
+				}
+
+				.section-detail {
+					margin-top: 15px;
+				}
+			}
+		}
+	}
+}
