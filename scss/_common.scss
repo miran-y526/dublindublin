@@ -1,0 +1,381 @@
+/*************** common 共通クラス ***************/
+$devise_pc_min_width: 1024px;
+$devise_tb_max_width: 1023px;
+$devise_tb_min_width: 768px;
+$devise_sp_max_width: 767px;
+$devise_ssp_max_width: 320px;
+
+@media (max-width: $devise_tb_max_width) {
+  .pc-visibility {
+    display: none !important;
+    visibility: hidden;
+  }
+}
+
+@media (min-width: $devise_pc_min_width) {
+  .tb-visibility {
+    display: none !important;
+    visibility: hidden;
+  }
+}
+
+@media (max-width: $devise_sp_max_width) {
+  .tb-visibility {
+    display: none !important;
+    visibility: hidden;
+  }
+}
+
+@media (max-width: $devise_sp_max_width) {
+  .pc-tb-visibility {
+    display: none !important;
+    visibility: hidden;
+  }
+}
+
+@media (min-width: $devise_pc_min_width) {
+  .tb-sp-visibility {
+    display: none !important;
+    visibility: hidden;
+  }
+}
+
+@media (min-width: $devise_tb_min_width) {
+  .sp-visibility {
+    display: none !important;
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 321px) {
+  .ssp-visibility {
+    display: none !important;
+    visibility: hidden;
+  }
+}
+
+@function vw($pixel) {
+  @return (($pixel/375) * 100)+vw;
+}
+
+@mixin clearfix() {
+  &::after {
+    clear: both;
+    content: "";
+    display: block;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+body {
+  background-color: #8DC992;
+  color: #231815;
+  font-size: 16px;
+  font-family: "M PLUS 1p", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", Meiryo,
+    メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif;
+  letter-spacing: 0.1em;
+  line-height: 28px;
+  margin: 0 auto;
+  max-width: 1920px;
+  width: 100%;
+}
+
+a {
+  color: inherit;
+  display: block;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  line-height: 24px;
+  text-align: center;
+  text-decoration: inherit;
+  transition: 0.5s;
+
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+img {
+  height: 100%;
+  vertical-align: top;
+  object-fit: cover;
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
+  letter-spacing: 0.15em;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 36px;
+
+  @media (max-width: $devise_tb_max_width) {
+    font-size: 27px;
+  }
+}
+
+h2 {
+  font-size: 30px;
+  line-height: 42px;
+
+  @media (max-width: $devise_tb_max_width) {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+h3 {
+  font-size: 24px;
+
+  @media (max-width: $devise_tb_max_width) {
+    font-size: 21px;
+  }
+}
+
+h4 {
+  font-size: 20px;
+
+  @media (max-width: $devise_tb_max_width) {
+    font-size: 18px;
+  }
+}
+
+ul {
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0;
+
+  li {
+    list-style: none;
+  }
+}
+
+p {
+  margin-bottom: 0;
+  margin-top: 0;
+
+  @media (max-width: $devise_sp_max_width) {
+    font-size: 14px;
+  }
+}
+
+// トップページ 各セクション h2タイトル 
+.section-detail-area {
+  margin: 0 auto;
+  margin-right: 0;
+  width: 65%;
+
+  @media (max-width: $devise_tb_max_width) {
+    box-sizing: border-box;
+    padding: 0 20px;
+    width: 100%;
+  }
+
+  .section-main-title {
+    background-color: #231815;
+    border: 5px solid #231815;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #ffffff;
+    margin: 0 auto;
+    margin-right: 0;
+    padding: 15px;
+    position: relative;
+    width: 75%;
+
+    @media (max-width: $devise_tb_max_width) {
+      width: 65%;
+    }
+
+    @media (max-width: $devise_sp_max_width) {
+      background-color: transparent;
+      border: none;
+      color: #231815;
+      padding: 0;
+      width: 100%;
+    }
+
+    &::before {
+      background-color: #ffffff;
+      border-radius: 15px;
+      border-top-right-radius: 0;
+      bottom: 0;
+      box-sizing: border-box;
+      color: #231815;
+      content: "01";
+      clip-path: polygon(0 0, 100% 0, 75% 100%, 0 100%);
+      font-size: 35px;
+      left: 0;
+      margin: auto;
+      padding: 15px;
+      position: absolute;
+
+      @media (max-width: $devise_tb_max_width) {
+        font-size: 21px;
+      }
+
+      @media (max-width: $devise_sp_max_width) {
+        display: none;
+      }
+    }
+  }
+
+  .section-en-title {
+    font-size: 21px;
+    letter-spacing: 0.15em;
+    margin: 5px 10px 30px 0;
+
+    @media (max-width: $devise_sp_max_width) {
+      font-size: 18px;
+      margin: 5px 5px 15px 0;
+    }
+  }
+
+  // トップページ 各セクション テキスト
+  .section-detail {
+    font-size: 18px;
+    line-height: 32px;
+
+    @media (max-width: $devise_tb_max_width) {
+      font-size: 14px;
+      line-height: 26px;
+    }
+  }
+
+  &.flow {
+    margin-left: 0;
+
+    .section-main-title {
+      margin-left: 0;
+      text-align: right;
+      width: 50%;
+
+      @media (max-width: $devise_tb_max_width) {
+        width: 52%;
+      }
+
+      @media (max-width: $devise_sp_max_width) {
+        text-align: left;
+        width: 90%;
+      }
+
+      &::before {
+        content: "02";
+      }
+    }
+
+    .section-en-title {
+      margin: 5px 0 30px 10px;
+
+      @media (max-width: $devise_tb_max_width) {
+        margin-bottom: 20px;
+      }
+
+      @media (max-width: $devise_sp_max_width) {
+        margin-left: 0;
+      }
+    }
+  }
+
+  &.school {
+    margin-left: 0;
+
+    .section-main-title {
+      margin-left: 0;
+      text-align: right;
+      width: 48%;
+
+      &::before {
+        content: "03";
+      }
+    }
+  }
+}
+
+// トップページ 各セクション ボタン
+.btn-area {
+  background-color: #22AC38;
+  border-radius: 30px;
+  box-shadow: 5px 5px 5px 0 rgba(4, 0, 0, 0.75);
+  box-sizing: border-box;
+  color: #ffffff;
+  font-size: 16px;
+  letter-spacing: 0.15em;
+  margin: 0 auto;
+  margin-right: 0;
+  margin-top: 30px;
+  padding: 15px;
+  width: 37%;
+
+  @media (max-width: $devise_tb_max_width) {
+    font-size: 14px;
+    width: 45%;
+  }
+
+  @media (max-width: $devise_sp_max_width) {
+    padding: 10px;
+    width: 55%;
+  }
+
+  &.flow {
+    margin-top: 210px;
+    width: 27%;
+
+    @media (max-width: $devise_tb_max_width) {
+      margin: 0 auto;
+      margin-bottom: 50px;
+      margin-left: 0;
+      width: 30%;
+    }
+
+    @media (max-width: $devise_sp_max_width) {
+      width: 50%;
+    }
+  }
+
+  &.school {
+    margin-left: 0;
+    width: 65%;
+
+    @media (max-width: $devise_tb_max_width) {
+      margin: 0 auto;
+      margin-right: 0;
+      margin-top: 30px;
+      width: 45%;
+    }
+
+    @media (max-width: $devise_sp_max_width) {
+      margin-top: 20px;
+      width: 75%;
+    }
+  }
+
+  &.content {
+    background-color: #CD5628;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 45%;
+
+    @media (max-width: $devise_tb_max_width) {
+      margin-top: 15px;
+      width: 70%;
+    }
+
+    @media (max-width: $devise_sp_max_width) {
+      width: 60%;
+    }
+  }
+}
