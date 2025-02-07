@@ -1,0 +1,220 @@
+#about_us {
+	box-sizing: border-box;
+	padding-bottom: 250px;
+	position: relative;
+
+	&::before {
+		background-image: url(https://test.dublin-dublin.com/wp-content/themes/dublindublin/assets/img/common/bg-fixed.png);
+		background-size: cover;
+		background-position: center top;
+		background-repeat: no-repeat;
+		content: "";
+		display: block;
+		height: 90vh;
+		position: fixed;
+		top: 12%;
+		width: 100%;
+		z-index: 1;
+	}
+
+	/// ダブリンダブリンについて
+	section.dublin_about_main {
+		margin: 0 auto;
+		width: 1000px;
+
+		@media (max-width: $devise_tb_max_width) {
+			box-sizing: border-box;
+			width: 100%;
+			padding: 0 20px;
+		}
+
+		.about_main_box {
+			&::after {
+				clear: both;
+				content: "";
+				display: block;
+			}
+
+			.main_txt {
+				float: left;
+				margin-right: 2px;
+				width: 100%;
+
+				@media (max-width: $devise_sp_max_width) {
+					margin-right: 0;
+					position: relative;
+				}
+
+				h2 {
+					font-size: 18px;
+					font-weight: bold;
+					letter-spacing: 0.025em;
+					line-height: 27px;
+					margin-bottom: 20px;
+				}
+
+				.txt-area {
+					p {
+						box-sizing: border-box;
+						font-size: 16px;
+						letter-spacing: 0.025em;
+						line-height: 28px;
+						margin-top: 25px;
+
+						@media (max-width: $devise_sp_max_width) {
+							font-size: 14px;
+							line-height: 22px;
+							padding: 0;
+						}
+
+						b {
+							font-size: 14px;
+							font-weight: bold;
+						}
+					}
+				}
+			}
+
+			.main_img {
+				float: right;
+				margin-left: 20px;
+				margin-top: 10px;
+				width: 35%;
+
+				@media (max-width: $devise_sp_max_width) {
+					box-sizing: border-box;
+					float: none;
+					margin-bottom: 30px;
+					margin-left: 0;
+					width: 100%;
+				}
+
+				.img-area {
+					@media (max-width: $devise_sp_max_width) {
+						width: 100%;
+					}
+
+					p {
+						margin-right: 10px;
+						text-align: right;
+
+						@media (max-width: $devise_sp_max_width) {
+							margin-left: 0;
+							text-align: left;
+							padding: 0;
+						}
+
+						.sp-br {
+							@media (max-width: $devise_sp_max_width) {
+								display: none;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	/// アイルランド留学の魅力7選
+	section.dublin_charm_main {
+		box-sizing: border-box;
+		margin: 0 auto;
+		padding-top: 120px;
+		width: 1000px;
+
+		@media (max-width: $devise_tb_max_width) {
+			width: 100%;
+			padding: 0 20px;
+			padding-top: 80px;
+		}
+
+		.charm-main-box {
+			margin-left: 0;
+
+			.charm-list {
+				align-items: start;
+				display: flex;
+				justify-content: space-between;
+				margin-top: 80px;
+				width: 100%;
+
+				@media (max-width: $devise_sp_max_width) {
+					display: block;
+				}
+
+				.box-left {
+					width: 50%;
+
+					@media (max-width: $devise_sp_max_width) {
+						width: 100%;
+					}
+
+					>h3 {
+						margin-top: 0;
+					}
+
+					.sp-img {
+						display: none;
+
+						@media (max-width: $devise_sp_max_width) {
+							display: block;
+							width: 100%;
+						}
+					}
+				}
+
+				.box-right {
+					margin-left: 5%;
+					width: 45%;
+
+					@media (max-width: $devise_sp_max_width) {
+						display: none;
+					}
+				}
+
+				&:nth-of-type(2n) {
+					flex-direction: row-reverse;
+
+					.box-right {
+						margin-left: 0;
+						margin-right: 5%;
+
+						@media (max-width: $devise_sp_max_width) {
+							margin-right: 0;
+						}
+					}
+				}
+			}
+		}
+
+	}
+
+	/// ダブリンダブリンが選ばれる5つの理由
+	section.dublin_merit_main {
+		box-sizing: border-box;
+		margin: 0 auto;
+		padding-top: 120px;
+		width: 1000px;
+
+		@media (max-width: $devise_tb_max_width) {
+			width: 100%;
+			padding: 0 20px;
+			padding-top: 80px;
+		}
+	}
+
+
+	/// ダブリンダブリンのサポート体制について
+	section.dublin_support_main {
+		box-sizing: border-box;
+		margin: 0 auto;
+		padding-top: 120px;
+		width: 1000px;
+
+		@media (max-width: $devise_tb_max_width) {
+			width: 100%;
+			padding: 0 20px;
+			padding-top: 80px;
+		}
+	}
+}

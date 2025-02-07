@@ -74,17 +74,17 @@ if (is_single()) {
 					</a>
 				</li>
 				<li class="select-area large">
-					<a href="<?php echo get_home_url('/'); ?>">
+					<a href="<?php echo get_home_url('/'); ?>/about">
 						ダブリンダブリンについて
 					</a>
 				</li>
 				<li class="select-area">
-					<a href="<?php echo get_home_url('/'); ?>">
+					<a href="<?php echo get_home_url('/'); ?>/inquiry">
 						お問い合わせ
 					</a>
 				</li>
 				<li class="select-area">
-					<a href="<?php echo get_home_url('/'); ?>">
+					<a href="<?php echo get_home_url('/'); ?>/company">
 						会社概要
 					</a>
 				</li>

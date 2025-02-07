@@ -1,7 +1,10 @@
 #page-top {
+	background-color: #8DC992;
 
 	// トップ タイトル部分
 	section.top-main-area {
+		margin-top: -60px;
+		padding-top: 100px;
 		position: relative;
 
 		.top-title-bg {
@@ -28,6 +31,7 @@
 			}
 
 			.site-main-title {
+				color: #231815;
 				font-size: 65px;
 				letter-spacing: 0.2em;
 				line-height: 72px;
@@ -99,6 +103,10 @@
 			}
 		}
 
+		.section-detail {
+			text-align: right;
+		}
+
 		.about-img {
 			max-width: 1200px;
 			position: relative;
@@ -115,7 +123,7 @@
 			}
 
 			&::before {
-				background-image: url(/assets/img/top/about-book.png);
+				background-image: url(https://test.dublin-dublin.com/wp-content/themes/dublindublin/assets/img/top/about-book.png);
 				background-position-x: left;
 				background-repeat: no-repeat;
 				background-size: cover;
@@ -159,7 +167,7 @@
 		}
 
 		&::after {
-			background-image: url(/assets/img/top/sheep02.png);
+			background-image: url(https://test.dublin-dublin.com/wp-content/themes/dublindublin/assets/img/top/sheep02.png);
 			background-position-x: left;
 			background-repeat: no-repeat;
 			background-size: cover;
@@ -195,7 +203,7 @@
 			}
 
 			&::before {
-				background-image: url(/assets/img/top/sheep01.png);
+				background-image: url(https://test.dublin-dublin.com/wp-content/themes/dublindublin/assets/img/top/sheep01.png);
 				background-position-x: left;
 				background-repeat: no-repeat;
 				background-size: cover;
@@ -271,7 +279,7 @@
 						}
 
 						&::before {
-							background-image: url(/assets/img/top/about-line01.png);
+							background-image: url(https://test.dublin-dublin.com/wp-content/themes/dublindublin/assets/img/top/about-line01.png);
 							background-position-x: left;
 							background-repeat: no-repeat;
 							background-size: cover;
@@ -310,7 +318,7 @@
 						}
 
 						&::before {
-							background-image: url(/assets/img/top/about-line02.png);
+							background-image: url(https://test.dublin-dublin.com/wp-content/themes/dublindublin/assets/img/top/about-line02.png);
 							background-position-x: left;
 							background-repeat: no-repeat;
 							background-size: cover;
@@ -383,7 +391,7 @@
 		}
 
 		&::before {
-			background-image: url(/assets/img/top/top-school01.png);
+			background-image: url(https://test.dublin-dublin.com/wp-content/themes/dublindublin/assets/img/top/top-school01.png);
 			background-position-x: left;
 			background-repeat: no-repeat;
 			background-size: cover;
@@ -405,7 +413,7 @@
 			display: none;
 
 			@media (max-width: $devise_tb_max_width) {
-				background-image: url(/assets/img/top/sheep02.png);
+				background-image: url(https://test.dublin-dublin.com/wp-content/themes/dublindublin/assets/img/top/sheep02.png);
 				background-position-x: left;
 				background-repeat: no-repeat;
 				background-size: cover;
@@ -575,6 +583,7 @@
 
 					>a {
 						box-sizing: border-box;
+						display: block;
 						padding: 10px 0;
 
 						&:hover {
@@ -612,14 +621,14 @@
 		&:before {
 			content: '';
 			position: absolute;
-			top: -20%;
+			top: -13%;
 			bottom: 0;
 			height: 300px;
 			left: 0;
 			right: 0;
 			background-color: #E6A978;
 			transform: skewY(-7deg);
-			z-index: -1;
+			z-index: 0;
 
 			@media (max-width: $devise_tb_max_width) {
 				top: -25%;
@@ -655,7 +664,7 @@
 		}
 
 		&::after {
-			background-image: url(/assets/img/top/kamome.png);
+			background-image: url(https://test.dublin-dublin.com/wp-content/themes/dublindublin/assets/img/top/kamome.png);
 			background-position-x: left;
 			background-repeat: no-repeat;
 			background-size: cover;
@@ -765,8 +774,160 @@
 					margin: 20px 0 0 0;
 				}
 
+				.section-main-title {
+					background-color: transparent;
+					border: none;
+					color: #231815;
+					font-weight: bold;
+					margin-bottom: 5px;
+					padding: 0;
+
+					&::before,
+					&::after {
+						display: none;
+					}
+				}
+
 				.section-detail {
 					margin-top: 15px;
+				}
+			}
+		}
+	}
+
+	// トップページ 各セクション h2タイトル 
+	.section-detail-area {
+		margin: 0 auto;
+		margin-right: 0;
+		width: 65%;
+
+		@media (max-width: $devise_tb_max_width) {
+			box-sizing: border-box;
+			padding: 0 20px;
+			width: 100%;
+		}
+
+		.section-main-title {
+			background-color: #231815;
+			border: 5px solid #231815;
+			border-radius: 15px;
+			box-sizing: border-box;
+			color: #ffffff;
+			margin: 0 auto;
+			margin-right: 0;
+			padding: 15px;
+			position: relative;
+			width: 63%;
+
+			@media (max-width: $devise_tb_max_width) {
+				width: 65%;
+			}
+
+			@media (max-width: $devise_sp_max_width) {
+				background-color: transparent;
+				border: none;
+				color: #231815;
+				padding: 0;
+				width: 100%;
+			}
+
+			&::before {
+				background-color: #ffffff;
+				border-radius: 15px;
+				border-top-right-radius: 0;
+				bottom: 0;
+				box-sizing: border-box;
+				color: #231815;
+				content: "01";
+				clip-path: polygon(0 0, 100% 0, 75% 100%, 0 100%);
+				font-size: 35px;
+				height: auto;
+				left: 0;
+				padding: 15px;
+				position: absolute;
+				top: 0;
+				width: 17%;
+
+				@media (max-width: $devise_tb_max_width) {
+					font-size: 21px;
+				}
+
+				@media (max-width: $devise_sp_max_width) {
+					display: none;
+				}
+			}
+		}
+
+		.section-en-title {
+			font-size: 21px;
+			letter-spacing: 0.15em;
+			margin: 5px 10px 30px 0;
+
+			@media (max-width: $devise_sp_max_width) {
+				font-size: 18px;
+				margin: 5px 5px 15px 0;
+			}
+		}
+
+		// トップページ 各セクション テキスト
+		.section-detail {
+			font-size: 18px;
+			line-height: 32px;
+			margin-bottom: 30px;
+
+			@media (max-width: $devise_tb_max_width) {
+				font-size: 14px;
+				line-height: 26px;
+			}
+		}
+
+		&.flow {
+			margin-left: 0;
+
+			.section-main-title {
+				margin-left: 0;
+				text-align: right;
+				width: 40%;
+
+				@media (max-width: $devise_tb_max_width) {
+					width: 52%;
+				}
+
+				@media (max-width: $devise_sp_max_width) {
+					text-align: left;
+					width: 90%;
+				}
+
+				&::before {
+					content: "02";
+					width: 26%;
+				}
+			}
+
+			.section-en-title {
+				margin: 5px 0 30px 10px;
+
+				@media (max-width: $devise_tb_max_width) {
+					margin-bottom: 20px;
+				}
+
+				@media (max-width: $devise_sp_max_width) {
+					margin-left: 0;
+				}
+			}
+		}
+
+		&.school {
+			margin-left: 0;
+
+			.section-main-title {
+				margin-left: 0;
+				text-align: right;
+				width: 45%;
+
+				&::before {
+					content: "03";
+					width: 33%;
 				}
 			}
 		}

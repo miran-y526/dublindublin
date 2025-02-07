@@ -1,0 +1,85 @@
+#privacy,
+#law,
+#term {
+	box-sizing: border-box;
+	padding-bottom: 150px;
+	position: relative;
+
+	&::before {
+		background-image: url(https://test.dublin-dublin.com/wp-content/themes/dublindublin/assets/img/common/bg-fixed.png);
+		background-size: cover;
+		background-position: center top;
+		background-repeat: no-repeat;
+		content: "";
+		display: block;
+		height: 90vh;
+		position: fixed;
+		top: 12%;
+		width: 100%;
+		z-index: 1;
+	}
+
+	.privacy_main,
+	.law_main,
+	.term_main {
+		margin: 0 auto;
+		margin-bottom: 120px;
+		width: 1000px;
+
+		@media (max-width: $devise_tb_max_width) {
+			box-sizing: border-box;
+			margin-bottom: 60px;
+			padding: 0 20px;
+			width: 100%;
+		}
+
+		.main-txt-area {
+			font-size: 16px;
+			line-height: 26px;
+
+			@media (max-width: $devise_sp_max_width) {
+				box-sizing: border-box;
+				font-size: 14px;
+				line-height: 22px;
+			}
+
+			.main-article {
+				margin-bottom: 60px;
+				margin-top: 120px;
+
+				@media (max-width: $devise_sp_max_width) {
+					margin-top: 60px;
+				}
+
+				.section-main-title {
+					color: #8DC992;
+					font-size: 32px;
+					font-weight: bold;
+					letter-spacing: 0.1em;
+					line-height: 42px;
+
+					@media (max-width: $devise_sp_max_width) {
+						font-size: 24px;
+						line-height: 32px;
+					}
+				}
+
+				.section-sub-title {
+					font-size: 16px;
+					font-weight: bold;
+					letter-spacing: 0.05em;
+					line-height: 26px;
+					margin-top: 5px;
+
+					@media (max-width: $devise_sp_max_width) {
+						font-size: 14px;
+					}
+				}
+			}
+		}
+
+		>a {
+			text-align: inherit;
+		}
+	}
+}

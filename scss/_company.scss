@@ -1,0 +1,170 @@
+#company {
+	box-sizing: border-box;
+	padding-bottom: 150px;
+	position: relative;
+
+	&::before {
+		background-image: url(https://test.dublin-dublin.com/wp-content/themes/dublindublin/assets/img/common/bg-fixed.png);
+		background-size: cover;
+		background-position: center top;
+		background-repeat: no-repeat;
+		content: "";
+		display: block;
+		height: 90vh;
+		position: fixed;
+		top: 12%;
+		width: 100%;
+		z-index: 1;
+	}
+
+	@media (max-width: $devise_tb_max_width) {
+		box-sizing: border-box;
+		width: 100%;
+		padding: 0 20px 80px 20px;
+	}
+
+	.company-title {
+		margin-top: 120px;
+
+		@media (max-width: $devise_tb_max_width) {
+			margin-top: 60px;
+		}
+
+		.section-main-title {
+			color: #8DC992;
+			font-size: 32px;
+			font-weight: bold;
+			letter-spacing: 0.1em;
+			line-height: 42px;
+
+			@media (max-width: $devise_sp_max_width) {
+				font-size: 24px;
+				line-height: 32px;
+			}
+		}
+
+		.section-title {
+			color: #8DC992;
+			font-size: 27px;
+			font-weight: bold;
+			letter-spacing: 0.1em;
+			line-height: 32px;
+
+			@media (max-width: $devise_sp_max_width) {
+				font-size: 21px;
+			}
+		}
+
+		.section-sub-title {
+			font-size: 16px;
+			font-weight: bold;
+			letter-spacing: 0.05em;
+			line-height: 26px;
+			margin-top: 5px;
+
+			@media (max-width: $devise_sp_max_width) {
+				font-size: 14px;
+			}
+		}
+	}
+
+	section.company-main-area {
+		margin: 0 auto;
+		margin-bottom: 120px;
+		width: 1000px;
+
+		@media (max-width: $devise_tb_max_width) {
+			box-sizing: border-box;
+			margin-bottom: 60px;
+			padding: 0 20px;
+			width: 100%;
+		}
+
+		.company-area {
+			margin-top: 80px;
+
+			@media (max-width: $devise_tb_max_width) {
+				margin-top: 50px;
+			}
+
+			>dl {
+				box-sizing: border-box;
+				display: flex;
+				font-size: 16px;
+				flex-wrap: wrap;
+				float: right;
+				letter-spacing: 0.05em;
+				line-height: 28px;
+				padding-bottom: 120px;
+				width: 100%;
+
+				@media (max-width: $devise_tb_max_width) {
+					display: block;
+					padding-bottom: 60px;
+				}
+
+				dt {
+					border-bottom: 1px solid #e8e8e8;
+					box-sizing: border-box;
+					font-weight: bold;
+					padding: 15px 0;
+					width: 20%;
+
+					@media (max-width: $devise_tb_max_width) {
+						border-bottom: none;
+						padding-left: 0;
+						width: 100%;
+					}
+				}
+
+				dd {
+					border-bottom: 1px solid #e8e8e8;
+					box-sizing: border-box;
+					margin-left: 0;
+					padding: 15px 0 15px 30px;
+					width: 80%;
+
+					@media (max-width: $devise_tb_max_width) {
+						padding: 0;
+						padding-bottom: 15px;
+						width: 100%;
+					}
+
+					ul {
+						li {
+							padding-left: 1em;
+							text-indent: -1em;
+
+							.sp-br {
+								@media (min-width: $devise_tb_min_width) {
+									display: none;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.address {
+			font-size: 16px;
+			line-height: 28px;
+			margin: 50px 0 20px;
+		}
+
+		.briefing_map {
+			margin: 0 auto;
+			width: 100%;
+
+			iframe {
+				height: 500px;
+				width: 100%;
+
+				@media (max-width: $devise_tb_max_width) {
+					box-sizing: border-box;
+					height: 300px;
+				}
+			}
+		}
+	}
+}
